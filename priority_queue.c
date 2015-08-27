@@ -122,7 +122,7 @@ static void buffer_repair_ ( struct priority_queue_el_ * buffer, int length )
         // assuming both children exist
         if (
                 current_descendent + 1 < length &&
-                buffer[ current_descendent + 1 ].priority > buffer[ current_descendent ].priority
+                buffer[ current_descendent + 1 ].priority < buffer[ current_descendent ].priority
            ) current_descendent++;
 
 

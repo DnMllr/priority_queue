@@ -25,7 +25,14 @@ int main ( void )
        else
        {
 
-           if ( prev < result[ i ] ) testsFailing = 1;
+           if ( prev > result[ i ] )
+           {
+               
+               testsFailing = 1;
+               break;
+
+           }
+
            prev = result[ i ];
 
        }
