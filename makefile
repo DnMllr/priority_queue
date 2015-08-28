@@ -1,3 +1,5 @@
+cc := clang
+debug_opts := -Wall -g
 
 
 priority_queue: priority_queue.c
